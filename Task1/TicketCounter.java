@@ -1,3 +1,20 @@
+// 4. Write a program for TicketCounter as mentioned below
+// a. User can get Bus/Train/Flight ticket from Multiple Vendors
+// b. Take at least 3 vendors for each
+// c. Ticket pricing Strategy should vary from vendor to vendor based on the distance.
+// d. Minimum charges for each category defined as Bus (100), Train(50), Flight( 500).
+// For each vendor of bus per km fare should differ 2%
+// For each vendor of train per km fare should differ 5%
+// For each vendor of fight per km fare should differ 8%
+// (Note: Create a vendor fare data table with above fare details)
+
+// Inputs:
+// Category : Bus/ Train/ Flight
+// Vendor: < vendor selected based under the category >
+// Distance: < km >
+
+// Final output :
+// Total fare
 import java.util.Scanner;
 class TicketCounter{
     public static void main(String[] args) {
