@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        form input[type="number"]:focus,
+        form input[type="email"]:focus,
+        form input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<form action="/update" method="post" >
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" th:value="${oldId}" readonly>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" th:value="${oldEmail}">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:value="${oldName}">
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
