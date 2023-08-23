@@ -1,0 +1,8 @@
+com/example/mapstructdemo/controller/ProductController.class
+com/example/mapstructdemo/mapper/ProductMapperImpl.class
+com/example/mapstructdemo/model/Item.class
+com/example/mapstructdemo/repository/ProductRepository.class
+com/example/mapstructdemo/MapstructDemoApplication.class
+com/example/mapstructdemo/dto/ProductDto.class
+com/example/mapstructdemo/model/Product.class
+com/example/mapstructdemo/mapper/ProductMapper.class
